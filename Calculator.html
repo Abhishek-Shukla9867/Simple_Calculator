@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #calculator {
+            border: 2px solid black;
+            height: 410px;
+            width: 300px;
+            border-radius: 5px;
+            background-color: rgb(4, 10, 195);
+        }
+
+        .x {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+        }
+
+        input {
+            margin: 20px 4px;
+            width: 380px;
+            height: 30px;
+            border-radius: 5px;
+            text-align: right;
+            font-weight: 500;
+            font-size: larger;
+
+
+        }
+
+        button {
+            padding: 15px;
+            margin: 12px;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight: 700;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="calculator">
+
+        <div class="x">
+            <input type="text" id="Display" readonly>
+
+            <div class="btn">
+                <button onclick="current_value = ''
+            document.querySelector('#Display').value=current_value;">C</button>
+
+
+                <button onclick="current_value= current_value+'1';
+             document.querySelector('#Display').value=current_value; ">1</button>
+
+
+                <button onclick="current_value=current_value+'2'
+                 document.querySelector('#Display').value=current_value;">2</button>
+
+
+                <button onclick="current_value=current_value+'3';
+             document.querySelector('#Display').value=current_value;">3</button>
+
+
+                <button onclick="current_value=current_value+'+';
+             document.querySelector('#Display').value=current_value;">+</button>
+
+                <button onclick="current_value=current_value+'4';
+             document.querySelector('#Display').value=current_value;">4</button>
+
+
+                <button onclick="current_value=current_value+'5';
+              document.querySelector('#Display').value=current_value;">5</button>
+
+                <button onclick="current_value=current_value+'6';
+              document.querySelector('#Display').value=current_value;">6</button>
+
+                <button onclick="current_value=current_value+'-';
+              document.querySelector('#Display').value=current_value;">-</button>
+
+                <button onclick="current_value=current_value+'7';
+              document.querySelector('#Display').value=current_value;">7</button>
+
+                <button onclick="current_value=current_value+'8';
+              document.querySelector('#Display').value=current_value;">8</button>
+
+                &nbsp;<button onclick="current_value=current_value+'9';
+              document.querySelector('#Display').value=current_value;">9</button>
+
+                <button onclick="current_value=current_value+'/';
+              document.querySelector('#Display').value=current_value;">/</button>
+
+                <button onclick="current_value=current_value+'.';
+              document.querySelector('#Display').value=current_value;">.</button>
+
+                &nbsp;<button onclick="current_value=current_value+'0';
+              document.querySelector('#Display').value=current_value;">0</button>
+
+
+                &nbsp;<button onclick=" let x = eval(current_value);current_value=x;
+                     document.querySelector('#Display').value=current_value;">=</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+
+        let current_value = "";
+
+        document.querySelector('#Display').value = current_value;
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
